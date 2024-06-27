@@ -1,206 +1,109 @@
-.. -*- mode: rst -*-
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a href="https://dev.azure.com/scikit-learn/scikit-learn/_build/latest?definitionId=1&amp;branchName=main" rel="nofollow"><img alt="Azure" src="https://camo.githubusercontent.com/eeb024d6b392c2f3cb552d7f297450f48529d93ab7f241ea01fbfb58a7176ed9/68747470733a2f2f6465762e617a7572652e636f6d2f7363696b69742d6c6561726e2f7363696b69742d6c6561726e2f5f617069732f6275696c642f7374617475732f7363696b69742d6c6561726e2e7363696b69742d6c6561726e3f6272616e63684e616d653d6d61696e" data-canonical-src="https://dev.azure.com/scikit-learn/scikit-learn/_apis/build/status/scikit-learn.scikit-learn?branchName=main" style="max-width: 100%;"></a> <a href="https://cirrus-ci.com/github/scikit-learn/scikit-learn/main" rel="nofollow"><img alt="西瑞斯" src="https://camo.githubusercontent.com/2e1eb304677f724b9a15dd386be6b53c1deed665660163df817a005dd9179e4a/68747470733a2f2f696d672e736869656c64732e696f2f6369727275732f6769746875622f7363696b69742d6c6561726e2f7363696b69742d6c6561726e2f6d61696e3f6c6162656c3d4369727275732532304349" data-canonical-src="https://img.shields.io/cirrus/github/scikit-learn/scikit-learn/main?label=Cirrus%20CI" style="max-width: 100%;"></a> <a href="https://codecov.io/gh/scikit-learn/scikit-learn" rel="nofollow"><img alt="编码" src="https://camo.githubusercontent.com/738dd3330bcd3a5f993f7a3e684567e16bc0e3fb67bec6ca8afd9c80e3601972/68747470733a2f2f636f6465636f762e696f2f67682f7363696b69742d6c6561726e2f7363696b69742d6c6561726e2f6272616e63682f6d61696e2f67726170682f62616467652e7376673f746f6b656e3d506b3847396767337939" data-canonical-src="https://codecov.io/gh/scikit-learn/scikit-learn/branch/main/graph/badge.svg?token=Pk8G9gg3y9" style="max-width: 100%;"></a> <a href="https://circleci.com/gh/scikit-learn/scikit-learn" rel="nofollow"><img alt="圆环" src="https://camo.githubusercontent.com/f069bf4c340722c8eeebdcfa4dc09124e87f1b83c3ad3a886b2dff639043c310/68747470733a2f2f636972636c6563692e636f6d2f67682f7363696b69742d6c6561726e2f7363696b69742d6c6561726e2f747265652f6d61696e2e7376673f7374796c653d736869656c64" data-canonical-src="https://circleci.com/gh/scikit-learn/scikit-learn/tree/main.svg?style=shield" style="max-width: 100%;"></a> <a href="https://github.com/scikit-learn/scikit-learn/actions?query=workflow%3A%22Wheel+builder%22+event%3Aschedule"><img alt="夜间轮子" src="https://github.com/scikit-learn/scikit-learn/workflows/Wheel%20builder/badge.svg?event=schedule" style="max-width: 100%;"></a> <a href="https://github.com/psf/black"><img alt="黑色的" src="https://camo.githubusercontent.com/7d770c433d6198d89f8c1e2f187b904a9721d176259d0e97157337741cc8e837/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f636f64652532307374796c652d626c61636b2d3030303030302e737667" data-canonical-src="https://img.shields.io/badge/code%20style-black-000000.svg" style="max-width: 100%;">
+</a> <a href="https://pypi.org/project/scikit-learn/" rel="nofollow"><img alt="Python版本" src="https://camo.githubusercontent.com/e40955c15b64ec9ab378f1a4391ac2e23d572b3e2b6bef8ff6adc202b210a4a2/68747470733a2f2f696d672e736869656c64732e696f2f707970692f707976657273696f6e732f7363696b69742d6c6561726e2e737667" data-canonical-src="https://img.shields.io/pypi/pyversions/scikit-learn.svg" style="max-width: 100%;">
+</a> <a href="https://pypi.org/project/scikit-learn" rel="nofollow"><img alt="PyPi" src="https://camo.githubusercontent.com/a4ee21eb60508b24123226af1d42fda6594c6349f752f757a9386deeeaec7101/68747470733a2f2f696d672e736869656c64732e696f2f707970692f762f7363696b69742d6c6561726e" data-canonical-src="https://img.shields.io/pypi/v/scikit-learn" style="max-width: 100%;"></a> <a href="https://zenodo.org/badge/latestdoi/21369/scikit-learn/scikit-learn" rel="nofollow"><img alt="多伊" src="https://camo.githubusercontent.com/0d0aa7bfe7b1294d9a54a87a033919de373e16ec69b80c14f64fc994917f41b7/68747470733a2f2f7a656e6f646f2e6f72672f62616467652f32313336392f7363696b69742d6c6561726e2f7363696b69742d6c6561726e2e737667" data-canonical-src="https://zenodo.org/badge/21369/scikit-learn/scikit-learn.svg" style="max-width: 100%;">
+</a> <a href="https://scikit-learn.org/scikit-learn-benchmarks" rel="nofollow"><img alt="基准" src="https://camo.githubusercontent.com/34d6ca899492322d2479846edf5e3b210d07840f454a4d8000685858a67ea852/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f42656e63686d61726b656425323062792d6173762d626c7565" data-canonical-src="https://img.shields.io/badge/Benchmarked%20by-asv-blue" style="max-width: 100%;"></a></p>
+<a href="https://scikit-learn.org/" rel="nofollow"><img alt="https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo.png" src="https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo.png" style="max-width: 100%;"></a>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">scikit-learn</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">是一个基于 SciPy 构建的机器学习 Python 模块，并根据 3-Clause BSD 许可证进行分发。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目由 David Cournapeau 于 2007 年作为 Google Summer of Code 项目启动，自那时起，许多志愿者都做出了贡献。请参阅</font></font><a href="https://scikit-learn.org/dev/about.html#authors" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于我们</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面，查看核心贡献者列表。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">它目前由一组志愿者维护。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站：</font></font><a href="https://scikit-learn.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://scikit-learn.org</font></font></a></p>
+<a name="user-content-installation"></a>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装</font></font></h2><a id="user-content-installation" class="anchor" aria-label="固定链接：安装" href="#installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<a name="user-content-dependencies"></a>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">依赖项</font></font></h3><a id="user-content-dependencies" class="anchor" aria-label="永久链接：依赖项" href="#dependencies"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">scikit-learn 需要：</font></font></p>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Python（&gt;= 3.9）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">NumPy（&gt;= 1.19.5）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">SciPy（&gt;=1.6.0）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">joblib（&gt;= 1.2.0）</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">线程池控制（&gt;= 3.1.0）</font></font></li>
+</ul>
+<hr>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Scikit-learn 0.20 是支持 Python 2.7 和 Python 3.4 的最后一个版本。scikit</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> 
+-learn 1.0 及更高版本需要 Python 3.7 或更新版本。scikit-learn 1.1 及更高版本需要 Python 3.8 或更新版本。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Scikit-learn 绘图功能（即函数以 开头</font></font><code>plot_</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">且类以 结尾</font></font><code>Display</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">）需要 Matplotlib（&gt;= 3.3.4）。运行示例需要 Matplotlib &gt;= 3.3.4。一些示例需要 scikit-image &gt;= 0.17.2，一些示例需要 pandas &gt;= 1.1.5，一些示例需要 seaborn &gt;= 0.9.0 和 plotly &gt;= 5.14.0。</font></font></p>
+<a name="user-content-user-installation"></a>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户安装</font></font></h3><a id="user-content-user-installation" class="anchor" aria-label="永久链接：用户安装" href="#user-installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果你已经安装了 NumPy 和 SciPy，那么安装 scikit-learn 最简单的方法是使用</font></font><code>pip</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">pip 安装 -U scikit-learn
+</font></font></pre>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">或者</font></font><code>conda</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：</font></font></p>
+<pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">conda 安装-c conda-forge scikit-learn
+</font></font></pre>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该文档包含更详细的</font></font><a href="https://scikit-learn.org/stable/install.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装说明</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<a name="user-content-changelog"></a>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">更新日志</font></font></h2><a id="user-content-changelog" class="anchor" aria-label="永久链接：变更日志" href="#changelog"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="https://scikit-learn.org/dev/whats_new.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">变更日志</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+以了解 scikit-learn 的重大变更历史。</font></font></p>
+<a name="user-content-development"></a>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发展</font></font></h2><a id="user-content-development" class="anchor" aria-label="固定链接：开发" href="#development"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们欢迎所有经验水平的新贡献者。scikit-learn 社区的目标是成为乐于助人、热情好客和高效的社区。
+</font></font><a href="https://scikit-learn.org/stable/developers/index.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">开发指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+包含有关贡献代码、文档、测试等的详细信息。我们在本 README 中包含了一些基本信息。</font></font></p>
+<a name="user-content-important-links"></a>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">重要链接</font></font></h3><a id="user-content-important-links" class="anchor" aria-label="永久链接：重要链接" href="#important-links"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">官方源代码仓库：</font></font><a href="https://github.com/scikit-learn/scikit-learn"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/scikit-learn/scikit-learn</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">下载版本：</font></font><a href="https://pypi.org/project/scikit-learn/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://pypi.org/project/scikit-learn/</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">问题跟踪器：</font></font><a href="https://github.com/scikit-learn/scikit-learn/issues"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/scikit-learn/scikit-learn/issues</font></font></a></li>
+</ul>
+<a name="user-content-source-code"></a>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">源代码</font></font></h3><a id="user-content-source-code" class="anchor" aria-label="永久链接：源代码" href="#source-code"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">您可以使用以下命令检查最新的来源：</font></font></p>
+<pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">git 克隆 https://github.com/scikit-learn/scikit-learn.git
+</font></font></pre>
+<a name="user-content-contributing"></a>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献</font></font></h3><a id="user-content-contributing" class="anchor" aria-label="永久链接：贡献" href="#contributing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">要了解有关对 scikit-learn 做出贡献的更多信息，请参阅我们的
+</font></font><a href="https://scikit-learn.org/dev/developers/contributing.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<a name="user-content-testing"></a>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">测试</font></font></h3><a id="user-content-testing" class="anchor" aria-label="固定链接：测试" href="#testing"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装后，您可以从源目录外部启动测试套件（您需要</font></font><code>pytest</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">安装 &gt;= 7.1.2）：</font></font></p>
+<pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">发表于 2018-07-23
+</font></font></pre>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+有关更多信息，</font><font style="vertical-align: inherit;">请参阅网页</font></font><a href="https://scikit-learn.org/dev/developers/contributing.html#testing-and-improving-test-coverage" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://scikit-learn.org/dev/developers/contributing.html#testing-and-improving-test-coverage 。</font></font></a><font style="vertical-align: inherit;"></font></p>
+<blockquote><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+可以通过设置环境变量在测试期间控制随机数生成</font></font><code>SKLEARN_SEED</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></blockquote>
+<a name="user-content-submitting-a-pull-request"></a>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">提交拉取请求</font></font></h3><a id="user-content-submitting-a-pull-request" class="anchor" aria-label="永久链接：提交拉取请求" href="#submitting-a-pull-request"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在打开 Pull 请求之前，请查看完整的贡献页面以确保您的代码符合我们的指南：</font></font><a href="https://scikit-learn.org/stable/developers/index.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://scikit-learn.org/stable/developers/index.html</font></font></a></p>
+<a name="user-content-project-history"></a>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">项目历史</font></font></h2><a id="user-content-project-history" class="anchor" aria-label="永久链接：项目历史" href="#project-history"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目由 David Cournapeau 于 2007 年作为 Google Summer of Code 项目启动，自那时起，许多志愿者都做出了贡献。请参阅</font></font><a href="https://scikit-learn.org/dev/about.html#authors" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">关于我们</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">页面，查看核心贡献者列表。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目目前由一支志愿者团队维护。</font></font></p>
+<p dir="auto"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">注意</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">：scikit-learn 以前被称为 scikits.learn。</font></font></p>
+<a name="user-content-help-and-support"></a>
+<div class="markdown-heading" dir="auto"><h2 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">帮助和支持</font></font></h2><a id="user-content-help-and-support" class="anchor" aria-label="永久链接：帮助和支持" href="#help-and-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<a name="user-content-documentation"></a>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></h3><a id="user-content-documentation" class="anchor" aria-label="永久链接：文档" href="#documentation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTML 文档（稳定版本）：</font></font><a href="https://scikit-learn.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://scikit-learn.org</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">HTML 文档（开发版本）：</font></font><a href="https://scikit-learn.org/dev/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://scikit-learn.org/dev/</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">常见问题解答：</font></font><a href="https://scikit-learn.org/stable/faq.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://scikit-learn.org/stable/faq.html</font></font></a></li>
+</ul>
+<a name="user-content-communication"></a>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">沟通</font></font></h3><a id="user-content-communication" class="anchor" aria-label="永久链接：沟通" href="#communication"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">邮件列表：</font></font><a href="https://mail.python.org/mailman/listinfo/scikit-learn" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://mail.python.org/mailman/listinfo/scikit-learn</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">徽标和品牌：</font></font><a href="https://github.com/scikit-learn/scikit-learn/tree/main/doc/logos"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https：//github.com/scikit-learn/scikit-learn/tree/main/doc/logos</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">博客：</font></font><a href="https://blog.scikit-learn.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://blog.scikit-learn.org</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">日历：</font></font><a href="https://blog.scikit-learn.org/calendar/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://blog.scikit-learn.org/calendar/</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Twitter：</font></font><a href="https://twitter.com/scikit_learn" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://twitter.com/scikit_learn</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">堆栈溢出：</font></font><a href="https://stackoverflow.com/questions/tagged/scikit-learn" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://stackoverflow.com/questions/tagged/scikit-learn</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">GitHub 讨论：</font></font><a href="https://github.com/scikit-learn/scikit-learn/discussions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://github.com/scikit-learn/scikit-learn/discussions</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">网站：</font></font><a href="https://scikit-learn.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://scikit-learn.org</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LinkedIn：</font></font><a href="https://www.linkedin.com/company/scikit-learn" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https：//www.linkedin.com/company/scikit-learn</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">YouTube：</font></font><a href="https://www.youtube.com/channel/UCJosFjYm0ZYVUARxuOZqnnw/playlists" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https：//www.youtube.com/channel/UCJosFjYm0ZYVUARxuOZqnnw/playlists</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Facebook的：</font></font><a href="https://www.facebook.com/scikitlearnofficial/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.facebook.com/scikitlearnofficial/</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instagram：</font></font><a href="https://www.instagram.com/scikitlearnofficial/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https：//www.instagram.com/scikitlearnofficial/</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TikTok：</font></font><a href="https://www.tiktok.com/@scikit.learn" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://www.tiktok.com/@scikit.learn</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Mastodon：</font></font><a href="https://mastodon.social/@sklearn@fosstodon.org" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://mastodon.social/@sklearn@fosstodon.org</font></font></a></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Discord：</font></font><a href="https://discord.gg/h9qyrK8Jc8" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://discord.gg/h9qyrK8Jc8</font></font></a></li>
+</ul>
+<a name="user-content-citation"></a>
+<div class="markdown-heading" dir="auto"><h3 tabindex="-1" class="heading-element" dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">引用</font></font></h3><a id="user-content-citation" class="anchor" aria-label="永久链接：引用" href="#citation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a></div>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如果您在科学出版物中使用 scikit-learn，我们将非常感谢您提供引用：</font></font><a href="https://scikit-learn.org/stable/about.html#citing-scikit-learn" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">https://scikit-learn.org/stable/about.html#citing-scikit-learn</font></font></a></p>
 
-|Azure| |CirrusCI| |Codecov| |CircleCI| |Nightly wheels| |Black| |PythonVersion| |PyPi| |DOI| |Benchmark|
-
-.. |Azure| image:: https://dev.azure.com/scikit-learn/scikit-learn/_apis/build/status/scikit-learn.scikit-learn?branchName=main
-   :target: https://dev.azure.com/scikit-learn/scikit-learn/_build/latest?definitionId=1&branchName=main
-
-.. |CircleCI| image:: https://circleci.com/gh/scikit-learn/scikit-learn/tree/main.svg?style=shield
-   :target: https://circleci.com/gh/scikit-learn/scikit-learn
-
-.. |CirrusCI| image:: https://img.shields.io/cirrus/github/scikit-learn/scikit-learn/main?label=Cirrus%20CI
-   :target: https://cirrus-ci.com/github/scikit-learn/scikit-learn/main
-
-.. |Codecov| image:: https://codecov.io/gh/scikit-learn/scikit-learn/branch/main/graph/badge.svg?token=Pk8G9gg3y9
-   :target: https://codecov.io/gh/scikit-learn/scikit-learn
-
-.. |Nightly wheels| image:: https://github.com/scikit-learn/scikit-learn/workflows/Wheel%20builder/badge.svg?event=schedule
-   :target: https://github.com/scikit-learn/scikit-learn/actions?query=workflow%3A%22Wheel+builder%22+event%3Aschedule
-
-.. |PythonVersion| image:: https://img.shields.io/pypi/pyversions/scikit-learn.svg
-   :target: https://pypi.org/project/scikit-learn/
-
-.. |PyPi| image:: https://img.shields.io/pypi/v/scikit-learn
-   :target: https://pypi.org/project/scikit-learn
-
-.. |Black| image:: https://img.shields.io/badge/code%20style-black-000000.svg
-   :target: https://github.com/psf/black
-
-.. |DOI| image:: https://zenodo.org/badge/21369/scikit-learn/scikit-learn.svg
-   :target: https://zenodo.org/badge/latestdoi/21369/scikit-learn/scikit-learn
-
-.. |Benchmark| image:: https://img.shields.io/badge/Benchmarked%20by-asv-blue
-   :target: https://scikit-learn.org/scikit-learn-benchmarks
-
-.. |PythonMinVersion| replace:: 3.9
-.. |NumPyMinVersion| replace:: 1.19.5
-.. |SciPyMinVersion| replace:: 1.6.0
-.. |JoblibMinVersion| replace:: 1.2.0
-.. |ThreadpoolctlMinVersion| replace:: 3.1.0
-.. |MatplotlibMinVersion| replace:: 3.3.4
-.. |Scikit-ImageMinVersion| replace:: 0.17.2
-.. |PandasMinVersion| replace:: 1.1.5
-.. |SeabornMinVersion| replace:: 0.9.0
-.. |PytestMinVersion| replace:: 7.1.2
-.. |PlotlyMinVersion| replace:: 5.14.0
-
-.. image:: https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/logos/scikit-learn-logo.png
-  :target: https://scikit-learn.org/
-
-**scikit-learn** is a Python module for machine learning built on top of
-SciPy and is distributed under the 3-Clause BSD license.
-
-The project was started in 2007 by David Cournapeau as a Google Summer
-of Code project, and since then many volunteers have contributed. See
-the `About us <https://scikit-learn.org/dev/about.html#authors>`__ page
-for a list of core contributors.
-
-It is currently maintained by a team of volunteers.
-
-Website: https://scikit-learn.org
-
-Installation
-------------
-
-Dependencies
-~~~~~~~~~~~~
-
-scikit-learn requires:
-
-- Python (>= |PythonMinVersion|)
-- NumPy (>= |NumPyMinVersion|)
-- SciPy (>= |SciPyMinVersion|)
-- joblib (>= |JoblibMinVersion|)
-- threadpoolctl (>= |ThreadpoolctlMinVersion|)
-
-=======
-
-**Scikit-learn 0.20 was the last version to support Python 2.7 and Python 3.4.**
-scikit-learn 1.0 and later require Python 3.7 or newer.
-scikit-learn 1.1 and later require Python 3.8 or newer.
-
-Scikit-learn plotting capabilities (i.e., functions start with ``plot_`` and
-classes end with ``Display``) require Matplotlib (>= |MatplotlibMinVersion|).
-For running the examples Matplotlib >= |MatplotlibMinVersion| is required.
-A few examples require scikit-image >= |Scikit-ImageMinVersion|, a few examples
-require pandas >= |PandasMinVersion|, some examples require seaborn >=
-|SeabornMinVersion| and plotly >= |PlotlyMinVersion|.
-
-User installation
-~~~~~~~~~~~~~~~~~
-
-If you already have a working installation of NumPy and SciPy,
-the easiest way to install scikit-learn is using ``pip``::
-
-    pip install -U scikit-learn
-
-or ``conda``::
-
-    conda install -c conda-forge scikit-learn
-
-The documentation includes more detailed `installation instructions <https://scikit-learn.org/stable/install.html>`_.
-
-
-Changelog
----------
-
-See the `changelog <https://scikit-learn.org/dev/whats_new.html>`__
-for a history of notable changes to scikit-learn.
-
-Development
------------
-
-We welcome new contributors of all experience levels. The scikit-learn
-community goals are to be helpful, welcoming, and effective. The
-`Development Guide <https://scikit-learn.org/stable/developers/index.html>`_
-has detailed information about contributing code, documentation, tests, and
-more. We've included some basic information in this README.
-
-Important links
-~~~~~~~~~~~~~~~
-
-- Official source code repo: https://github.com/scikit-learn/scikit-learn
-- Download releases: https://pypi.org/project/scikit-learn/
-- Issue tracker: https://github.com/scikit-learn/scikit-learn/issues
-
-Source code
-~~~~~~~~~~~
-
-You can check the latest sources with the command::
-
-    git clone https://github.com/scikit-learn/scikit-learn.git
-
-Contributing
-~~~~~~~~~~~~
-
-To learn more about making a contribution to scikit-learn, please see our
-`Contributing guide
-<https://scikit-learn.org/dev/developers/contributing.html>`_.
-
-Testing
-~~~~~~~
-
-After installation, you can launch the test suite from outside the source
-directory (you will need to have ``pytest`` >= |PyTestMinVersion| installed)::
-
-    pytest sklearn
-
-See the web page https://scikit-learn.org/dev/developers/contributing.html#testing-and-improving-test-coverage
-for more information.
-
-    Random number generation can be controlled during testing by setting
-    the ``SKLEARN_SEED`` environment variable.
-
-Submitting a Pull Request
-~~~~~~~~~~~~~~~~~~~~~~~~~
-
-Before opening a Pull Request, have a look at the
-full Contributing page to make sure your code complies
-with our guidelines: https://scikit-learn.org/stable/developers/index.html
-
-Project History
----------------
-
-The project was started in 2007 by David Cournapeau as a Google Summer
-of Code project, and since then many volunteers have contributed. See
-the `About us <https://scikit-learn.org/dev/about.html#authors>`__ page
-for a list of core contributors.
-
-The project is currently maintained by a team of volunteers.
-
-**Note**: `scikit-learn` was previously referred to as `scikits.learn`.
-
-Help and Support
-----------------
-
-Documentation
-~~~~~~~~~~~~~
-
-- HTML documentation (stable release): https://scikit-learn.org
-- HTML documentation (development version): https://scikit-learn.org/dev/
-- FAQ: https://scikit-learn.org/stable/faq.html
-
-Communication
-~~~~~~~~~~~~~
-
-- Mailing list: https://mail.python.org/mailman/listinfo/scikit-learn
-- Logos & Branding: https://github.com/scikit-learn/scikit-learn/tree/main/doc/logos
-- Blog: https://blog.scikit-learn.org
-- Calendar: https://blog.scikit-learn.org/calendar/
-- Twitter: https://twitter.com/scikit_learn
-- Stack Overflow: https://stackoverflow.com/questions/tagged/scikit-learn
-- GitHub Discussions: https://github.com/scikit-learn/scikit-learn/discussions
-- Website: https://scikit-learn.org
-- LinkedIn: https://www.linkedin.com/company/scikit-learn
-- YouTube: https://www.youtube.com/channel/UCJosFjYm0ZYVUARxuOZqnnw/playlists
-- Facebook: https://www.facebook.com/scikitlearnofficial/
-- Instagram: https://www.instagram.com/scikitlearnofficial/
-- TikTok: https://www.tiktok.com/@scikit.learn
-- Mastodon: https://mastodon.social/@sklearn@fosstodon.org
-- Discord: https://discord.gg/h9qyrK8Jc8
-
-
-Citation
-~~~~~~~~
-
-If you use scikit-learn in a scientific publication, we would appreciate citations: https://scikit-learn.org/stable/about.html#citing-scikit-learn
+</article></div>
